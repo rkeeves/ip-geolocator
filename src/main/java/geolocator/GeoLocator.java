@@ -11,8 +11,14 @@ import com.google.common.net.UrlEscapers;
 
 import org.apache.commons.io.IOUtils;
 
+/**
+ * This class is responsible for gathering geo location data of the running host.
+ */
 public class GeoLocator {
 
+    /**
+     * The URI of the service used by GeoLocator
+     */
     public static final String GEOLOCATOR_SERVICE_URI = "http://ip-api.com/json/";
 
     private static ObjectMapper OBJECT_MAPPER = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
