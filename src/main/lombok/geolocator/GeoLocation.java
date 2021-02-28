@@ -2,6 +2,9 @@ package geolocator;
 
 import lombok.Data;
 
+/**
+ * This class represents geo location related data.
+ */
 @Data
 public class GeoLocation {
 
